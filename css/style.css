@@ -46,6 +46,13 @@ body {
   --border: #232a33;
 }
 
+.nav-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .header {
   display: flex;
   flex-wrap: wrap;
@@ -102,6 +109,24 @@ body {
   gap: 10px;
   margin-top: 12px;
   flex-wrap: wrap;
+}
+
+.top-nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 12px 20px;
+  margin: -32px -20px 24px;
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.top-nav .toggle {
+  margin-left: auto;
 }
 
 .header-right {
@@ -380,6 +405,20 @@ body {
 
   .links-toggle:checked ~ .quick-links {
     display: flex;
+  }
+
+  .top-nav {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .nav-links {
+    width: 100%;
+    order: 3;
+  }
+
+  .top-nav .toggle {
+    order: 2;
   }
 }
 

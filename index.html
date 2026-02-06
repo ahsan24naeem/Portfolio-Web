@@ -5,10 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ahsan Naeem | CV</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="images/favicon.ico" />
 </head>
 <body>
   <input type="checkbox" id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" />
   <div class="page">
+    <nav class="top-nav">
+      <img class="nav-image" src="images/favicon.ico" alt="">
+      <label class="toggle" for="theme-toggle">
+        <span>Light</span>
+        <span class="switch"></span>
+        <span>Dark</span>
+      </label>
+    </nav>
     <header class="header">
       <div class="header-left">
         <div class="photo">
@@ -26,11 +35,6 @@
         </div>
       </div>
       <div class="header-right">
-        <label class="toggle" for="theme-toggle">
-          <span>Light</span>
-          <span class="switch"></span>
-          <span>Dark</span>
-        </label>
         <input type="checkbox" id="links-toggle" class="links-toggle" aria-label="Toggle quick links" />
         <label class="links-toggle-btn" for="links-toggle">
           <ion-icon name="chevron-down-outline"></ion-icon>
@@ -73,23 +77,23 @@
           <div class="item">
             <div class="item-head">
               <h3>BS Computer Science</h3>
-              <span>2023–2027 (Expected)</span>
+              <span>2023-2027 (Expected)</span>
             </div>
             <p>FAST-NUCES, Lahore — CGPA: 3.6 (Dean's List)</p>
           </div>
           <div class="item">
             <div class="item-head">
               <h3>A-Levels</h3>
-              <span>2018–2023</span>
+              <span>2018-2023</span>
             </div>
-            <p>LGS-JT — 3 A’s, 100% Merit Scholarship</p>
+            <p>LGS-JT - 3 A's, 100% Merit Scholarship</p>
           </div>
           <div class="item">
             <div class="item-head">
               <h3>O-Levels</h3>
-              <span>—</span>
+              <span></span>
             </div>
-            <p>8 A’s & A*’s</p>
+            <p>LGS-JT - 8 A's & A*'s</p>
           </div>
         </div>
       </section>
@@ -115,21 +119,21 @@
           <div class="item">
             <div class="item-head">
               <h3>Web-App Developer (Shopify) — MiskApps, Lahore</h3>
-              <span>Sep 2025 – Present</span>
+              <span>Sep 2025 - Present</span>
             </div>
             <p>Building Shopify full stack apps using PHP and ReactJS.</p>
           </div>
           <div class="item">
             <div class="item-head">
               <h3>Teaching Assistant (Programming Fundamentals) — FAST-NUCES</h3>
-              <span>Sep 2025 – Dec 2025</span>
+              <span>Sep 2025 - Dec 2025</span>
             </div>
             <p>Assisted with evaluations and mentored students in C++ programming.</p>
           </div>
           <div class="item">
             <div class="item-head">
               <h3>Intern (Volunteer) — Systems Limited, Lahore</h3>
-              <span>Jun 2025 – Jul 2025</span>
+              <span>Jun 2025 - Jul 2025</span>
             </div>
             <p>Worked as a frontend web developer and strengthened ReactJS skills.</p>
           </div>
@@ -142,7 +146,7 @@
           <div class="item">
             <div class="item-head">
               <h3>Lost & Found Website</h3>
-              <span>Next.js, React, Node.js, MSSQL</span>
+              <span>Next, React, Node, MSSQL</span>
             </div>
             <p>Full-stack web application for reporting and recovering lost items.</p>
           </div>
@@ -185,25 +189,20 @@
       </section>
 
       <section class="card" id="contact">
-        <h2>Contact</h2>
+        <!-- <h2>Contact</h2> -->
         <div class="contact-grid">
-          <!-- <div>
-            <p><strong>Address:</strong> 219-D, DHA Rahbar Phase-11, Sector 1, Lahore, Pakistan</p>
-            <p><strong>Email:</strong> <a class="with-icon" href="mailto:ahsan24naeem@gmail.com"><ion-icon name="mail-outline"></ion-icon><span>ahsan24naeem@gmail.com</span></a></p>
-            <p><strong>Phone:</strong> <a class="with-icon" href="tel:+923248403266"><ion-icon name="call-outline"></ion-icon><span>+92 324 8403266</span></a></p>
-          </div> -->
-          <form class="contact-form" action="#">
+          <form class="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLSej7_xQwqI9DAqkAEOJ8EPyc4KtgAsHzOpAT5S-JJ1J7Cy3Ng/formResponse" method="POST" target="_blank">
             <div class="field">
               <label for="name">Name</label>
-              <input id="name" type="text" placeholder="Your name" />
+              <input id="name" name="entry.1977870170" type="text" placeholder="Your name" required />
             </div>
             <div class="field">
               <label for="email">Email</label>
-              <input id="email" type="email" placeholder="Your email" />
+              <input id="email" name="entry.61265843" type="email" placeholder="Your email" required />
             </div>
             <div class="field">
               <label for="message">Message</label>
-              <textarea id="message" rows="4" placeholder="How can I help?"></textarea>
+              <textarea id="message" name="entry.613595688" rows="4" placeholder="How can I help?" required></textarea>
             </div>
             <button class="btn" type="submit">Send</button>
           </form>
